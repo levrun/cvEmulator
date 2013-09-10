@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Введите ФИО"
+            android:inputType="textCapWords" >
+
+            <requestFocus />
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnChangeDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Дата рождения" />
+
+            <TextView
+                android:id="@+id/tvBirthDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spBirthDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </Spinner>
+
+        <EditText
+            android:id="@+id/edPositionName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Название должности"
+            android:inputType="textCapSentences" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/edExpectedSalary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Ожидаемая зарплата(в рублях)"
+            android:inputType="number" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/edPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:digits="0123456789+"
+            android:ems="10"
+            android:hint="Номер телефона"
+            android:inputType="phone" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/edEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Электронная почта"
+            android:inputType="textEmailAddress" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btnSendResume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Отправить резюме" />
+    
+    </LinearLayout>
+
+</ScrollView>
