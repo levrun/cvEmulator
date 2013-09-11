@@ -2,6 +2,8 @@
 <resources>
 
     <string name="app_name">Send resume</string>
+    <string name="hh_test">Head Hunter test app</string>
+    
     <string name="send_response">Send response</string>
     <string name="action_settings">Settings</string>
 	<string name="fio_str_activity1">Enter your full name</string>
