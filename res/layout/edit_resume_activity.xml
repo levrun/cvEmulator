@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:ems="10"
-            android:hint="Введите ФИО"
+            android:hint="@string/fio_str_activity1"
             android:inputType="textCapWords" >
 
             <requestFocus />
@@ -32,7 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Дата рождения" />
+                android:text="@string/birth_date_activity1" />
 
             <TextView
                 android:id="@+id/tvBirthDate"
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:ems="10"
-            android:hint="Название должности"
+            android:hint="@string/position_name_activity1"
             android:inputType="textCapSentences" >
         </EditText>
 
@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:ems="10"
-            android:hint="Ожидаемая зарплата(в рублях)"
+            android:hint="@string/salary_activity1"
             android:inputType="number" >
         </EditText>
 
@@ -76,7 +76,7 @@
             android:layout_marginBottom="15dp"
             android:digits="0123456789+"
             android:ems="10"
-            android:hint="Номер телефона"
+            android:hint="@string/phone_activity1"
             android:inputType="phone" >
         </EditText>
 
@@ -86,7 +86,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:ems="10"
-            android:hint="Электронная почта"
+            android:hint="@string/email_activity1"
             android:inputType="textEmailAddress" >
         </EditText>
 
@@ -94,7 +94,7 @@
             android:id="@+id/btnSendResume"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Отправить резюме" />
+            android:text="@string/send_resume_button_text_activity1" />
     
     </LinearLayout>
 

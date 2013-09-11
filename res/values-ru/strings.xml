@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Отправить резюме</string>
+    <string name="send_response">Отправить отзыв</string>
+    <string name="action_settings">Settings</string>
+    <string name="fio_str_activity1">Введите ФИО</string>
+    <string name="birth_date_activity1">Дата рождения</string>
+    <string name="position_name_activity1">Название должности</string>
+    <string name="salary_activity1">Ожидаемая зарплата(в рублях)</string>
+    <string name="phone_activity1">Номер телефона</string>
+	<string name="email_activity1">Электронная почта</string>
+	<string name="send_resume_button_text_activity1">Отправить резюме</string>
+	
+	<string name="fio_str_activity2">ФИО кандидата</string>
+	<string name="birth_date_activity2">Дата рождения</string>
+	<string name="sex_activity2">Пол</string>
+	<string name="position_activity2">Должность</string>
+	<string name="salary_activity2">Заработная плата рублей</string>
+	<string name="phone_activity2">Номер телефона</string>
+	<string name="email_activity2">Электронная почта</string>
+	<string name="response_for_candidate_activity2">Письмо соискателю</string>
+	<string name="send_response_button_text_activity2">Отправить ответ</string>
+	
+	<string name="man">Мужчина</string>
+	<string name="woman">Женщина</string>
+	
+	<string name="response_from_employer_activity1">Ответ от работодателя</string>
+	<string name="email_to_candidate_subject">От работодателя XXX</string>
+	<string name="email_to_candidate_hello">Здравствуйте, </string>
+	<string name="email_to_candidate_text">. Вас приветствует работодатель XXX. Нас заинтересовала ваша</string>
+	
+	
+	
+	
+	
+	
+	    
+</resources>

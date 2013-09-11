@@ -49,14 +49,17 @@ public class EditResumeActivity extends Activity {
 
 	private static final int DATE_DIALOG_ID = 999;
 	private static final int RESPONSE_DIALOG_ID = 998;
-
-	private String[] data = { "Мужчина", "Женщина" };
-
+	
+	private String[] genderList = new String[2];
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.edit_resume_activity);
-
+		
+		genderList[1] = getResources().getString(R.string.man);
+		genderList[0] = getResources().getString(R.string.woman);
+		
 		edFullName = (EditText) findViewById(R.id.edFullName);
 		if(fullName != null) {
 			edFullName.setText(fullName);
@@ -72,12 +75,11 @@ public class EditResumeActivity extends Activity {
 		addListenerOnButton();
 
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_spinner_item, data);
+				android.R.layout.simple_spinner_item, genderList);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
 		spSexSelector = (Spinner) findViewById(R.id.spBirthDate);
 		spSexSelector.setAdapter(adapter);
-		spSexSelector.setPrompt("Title");
 		spSexSelector.setSelection(0);
 		
 		responseIntent = getIntent();
@@ -146,10 +148,10 @@ public class EditResumeActivity extends Activity {
 			return new DatePickerDialog(this, datePickerListener, year, month, day);
 		case RESPONSE_DIALOG_ID:
 			AlertDialog.Builder adb = new AlertDialog.Builder(this);
-	        adb.setTitle("Ответ от работодателя");
+	        adb.setTitle(getResources().getString(R.string.response_from_employer_activity1));
 	        adb.setMessage(responseIntent.getExtras().get(SendResponseToApplicantActivity.RESPONSE_TEXT_KEY).toString());
 	        adb.setIcon(android.R.drawable.ic_dialog_info);
-	        adb.setPositiveButton("Ok", null);
+	        adb.setPositiveButton(getResources().getString(android.R.string.ok), null);
 	        return adb.create();
 		}
 		

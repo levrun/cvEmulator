@@ -63,9 +63,11 @@ public class SendResponseToApplicantActivity extends Activity {
 						Uri.parse("mailto:"
 								+ tvEmail.getText().toString().trim()
 								+ "?subject="
-								+ Uri.encode("От работодателя XXX")
+								+ Uri.encode(getResources().getString(R.string.email_to_candidate_subject))
 								+ "&body="
-								+ Uri.encode("Здравствуйте, " + tvFullName.getText().toString() + ". Вас приветствует работодатель XXX. Нас заинтересовала ваша ...")));
+								+ Uri.encode(getResources().getString(R.string.email_to_candidate_hello) 
+								+ tvFullName.getText().toString() 
+								+ getResources().getString(R.string.email_to_candidate_text))));
 				startActivity(sendToIntent);
 			}
 		});
