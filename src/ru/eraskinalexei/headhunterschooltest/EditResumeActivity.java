@@ -57,6 +57,8 @@ public class EditResumeActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.edit_resume_activity);
 		
+		overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+		
 		genderList[1] = getResources().getString(R.string.man);
 		genderList[0] = getResources().getString(R.string.woman);
 		

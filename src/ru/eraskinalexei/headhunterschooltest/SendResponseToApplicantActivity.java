@@ -18,7 +18,9 @@ public class SendResponseToApplicantActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.send_response_to_applicant_activity);
-
+		
+		overridePendingTransition(R.anim.rotation, R.anim.rotation);
+		
 		Bundle bundle = getIntent().getExtras();
 
 		final TextView tvFullName = (TextView) findViewById(R.id.tvFullName);

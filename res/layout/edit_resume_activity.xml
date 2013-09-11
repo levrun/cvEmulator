@@ -2,8 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/scroll"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content" 
-    >
+    android:layout_height="wrap_content" >
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -18,8 +17,6 @@
             android:ems="10"
             android:hint="@string/fio_str_activity1"
             android:inputType="textCapWords" >
-
-            <requestFocus />
         </EditText>
 
         <LinearLayout
@@ -97,7 +94,6 @@
             android:layout_height="wrap_content"
             android:background="@drawable/clickable_button"
             android:text="@string/send_resume_button_text_activity1" />
-    
     </LinearLayout>
 
 </ScrollView>
