@@ -32,6 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/clickable_button"
                 android:text="@string/birth_date_activity1" />
 
             <TextView
@@ -94,6 +95,7 @@
             android:id="@+id/btnSendResume"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/clickable_button"
             android:text="@string/send_resume_button_text_activity1" />
     
     </LinearLayout>

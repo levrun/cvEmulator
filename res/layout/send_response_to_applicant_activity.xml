@@ -20,48 +20,55 @@
             android:id="@+id/tvBirthDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/birth_date_activity2"
-        />
+            android:hint="@string/birth_date_activity2" 
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            
+            />
 
         <TextView
             android:id="@+id/tvSex"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/sex_activity2"
-        />
-        
+            android:textAppearance="?android:attr/textAppearanceMedium"
+             />
+
         <TextView
             android:id="@+id/tvPositionName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/position_activity2"
-        />
-        
+            android:textAppearance="?android:attr/textAppearanceMedium"
+             />
+
         <TextView
             android:id="@+id/tvSalary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/salary_activity2"
+            android:textAppearance="?android:attr/textAppearanceMedium"
              />
-        
-		<TextView
+
+        <TextView
             android:id="@+id/tvPhone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:clickable="true"
-            android:textColor="#000000"
+            android:autoLink="phone"
             android:hint="@string/phone_activity2"
-        />
-        
+            android:paddingBottom="8dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
         <TextView
             android:id="@+id/tvEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:autoLink="email"
-            android:textColor="#000000"
             android:hint="@string/email_activity2"
-       />
-        
+            android:paddingBottom="8dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
         <EditText
             android:id="@+id/edResponse"
             android:layout_width="match_parent"
@@ -77,6 +84,7 @@
             android:id="@+id/btnSendResponse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/clickable_button"
             android:text="@string/send_response_button_text_activity2" />
     </LinearLayout>
 
