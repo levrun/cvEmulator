@@ -27,8 +27,7 @@ public class SendResponseToApplicantActivity extends Activity {
 		tvFullName.setText(bundle.getString(EditResumeActivity.FULL_NAME_KEY));
 
 		TextView tvBirthDate = (TextView) findViewById(R.id.tvBirthDate);
-		tvBirthDate
-				.setText(bundle.getString(EditResumeActivity.BIRTH_DATE_KEY));
+		tvBirthDate.setText(bundle.getString(EditResumeActivity.BIRTH_DATE_KEY));
 
 		TextView tvSex = (TextView) findViewById(R.id.tvSex);
 		tvSex.setText(bundle.getString(EditResumeActivity.SEX_KEY));
