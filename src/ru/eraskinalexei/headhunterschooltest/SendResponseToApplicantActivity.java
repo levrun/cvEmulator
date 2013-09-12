@@ -19,8 +19,6 @@ public class SendResponseToApplicantActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.send_response_to_applicant_activity);
 		
-		overridePendingTransition(R.anim.rotation, R.anim.rotation);
-		
 		Bundle bundle = getIntent().getExtras();
 
 		final TextView tvFullName = (TextView) findViewById(R.id.tvFullName);
@@ -70,6 +68,7 @@ public class SendResponseToApplicantActivity extends Activity {
 								+ tvFullName.getText().toString() 
 								+ getResources().getString(R.string.email_to_candidate_text))));
 				startActivity(sendToIntent);
+				overridePendingTransition(R.anim.zoom_enter, R.anim.zoom_exit);
 			}
 		});
 		

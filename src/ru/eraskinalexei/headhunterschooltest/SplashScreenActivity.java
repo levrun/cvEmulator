@@ -13,13 +13,13 @@ public class SplashScreenActivity extends Activity implements Runnable {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hh_logo);
-        
     }
 
     public void run() {
         try {
             Thread.sleep(sleep);
             startActivity(new Intent(SplashScreenActivity.this, EditResumeActivity.class));
+            overridePendingTransition(R.anim.zoom_enter, R.anim.zoom_exit); 
             onDestroy();
         } catch (InterruptedException e) {
             e.printStackTrace();

@@ -57,7 +57,7 @@ public class EditResumeActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.edit_resume_activity);
 		
-		overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+		overridePendingTransition(R.anim.zoom_enter, R.anim.zoom_exit);
 		
 		genderList[1] = getResources().getString(R.string.man);
 		genderList[0] = getResources().getString(R.string.woman);
@@ -137,6 +137,7 @@ public class EditResumeActivity extends Activity {
 				intent.putExtra(EMAIL_KEY, edEmail.getText().toString());
 				
 				startActivity(intent);
+				overridePendingTransition(R.anim.zoom_enter, R.anim.zoom_exit);
 			}
 
 		});
@@ -152,7 +153,7 @@ public class EditResumeActivity extends Activity {
 			AlertDialog.Builder adb = new AlertDialog.Builder(this);
 	        adb.setTitle(getResources().getString(R.string.response_from_employer_activity1));
 	        adb.setMessage(responseIntent.getExtras().get(SendResponseToApplicantActivity.RESPONSE_TEXT_KEY).toString());
-	        adb.setIcon(android.R.drawable.ic_dialog_info);
+	        adb.setIcon(R.drawable.ic_launcher);
 	        adb.setPositiveButton(getResources().getString(android.R.string.ok), null);
 	        return adb.create();
 		}
