@@ -32,6 +32,12 @@
 	<string name="email_to_candidate_hello">Здравствуйте, </string>
 	<string name="email_to_candidate_text">. Вас приветствует работодатель XXX. Нас заинтересовала ваша</string>
 	
+	<string name="message_to_candidate_text2_1">Здравствуйте, </string>
+	<string name="message_to_candidate_text2_2">".  \n С уважением, компания Head Hunter."</string>
+	
+	
+	
+	
 	
 	
 	
