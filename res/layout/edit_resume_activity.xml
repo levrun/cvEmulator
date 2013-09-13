@@ -2,27 +2,28 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/scroll"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content" 
-    android:background="@drawable/background">
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+ >
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" 
-        android:paddingLeft="10.0dip" 
-        android:paddingTop="10.0dip" 
-        android:paddingRight="10.0dip" 
-        android:paddingBottom="10.0dip">
-		
+        android:orientation="vertical"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="10.0dip" >
+
         <EditText
             android:id="@+id/edFullName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:ems="10"
-            android:color="#66FF0000"
             android:hint="@string/fio_str_activity1"
-            android:inputType="textCapWords" >
+            android:inputType="textCapWords"
+            android:color="#66FF0000" >
         </EditText>
 
         <LinearLayout
@@ -42,16 +43,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text=""
                 android:paddingLeft="20.0dip"
+                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
-        
         </LinearLayout>
 
         <Spinner
             android:id="@+id/spBirthDate"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content" >
         </Spinner>
 
         <EditText
