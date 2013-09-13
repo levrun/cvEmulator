@@ -73,7 +73,7 @@ public class SendResponseToApplicantActivity extends Activity {
 		});
 		
 		final EditText responseText = (EditText)findViewById(R.id.edResponse);
-		responseText.setText(getResources().getString(R.string.message_to_candidate_text2_1) + tvFullName.getText().toString() + getResources().getString(R.string.message_to_candidate_text2_2));
+		responseText.setText(getResources().getString(R.string.message_to_candidate_text2_1) + " " + tvFullName.getText().toString() + getResources().getString(R.string.message_to_candidate_text2_2));
 		
 		Button sendResponse = (Button)findViewById(R.id.btnSendResponse);
 		sendResponse.setOnClickListener(new OnClickListener() {

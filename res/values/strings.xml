@@ -35,4 +35,7 @@
 	<string name="message_to_candidate_text2_1">Hello, </string>
 	<string name="message_to_candidate_text2_2">". TODO \n Head Hunter company."</string>
 	
+	<string name="error_message_fio">Put your last first and middle name before sending.</string>	
+	
+	
 </resources>

@@ -19,6 +19,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class EditResumeActivity extends Activity {
 
@@ -126,6 +127,13 @@ public class EditResumeActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
+				if("".equals(edFullName.getText().toString()) || edFullName.getText().toString().trim().equals("")) {
+					Toast.makeText(EditResumeActivity.this, getResources().getString(R.string.error_message_fio), Toast.LENGTH_LONG).show();
+					edFullName.requestFocus();
+					return;
+				}
+				
+				
 				Intent intent = new Intent(EditResumeActivity.this,
 						SendResponseToApplicantActivity.class);
 				
