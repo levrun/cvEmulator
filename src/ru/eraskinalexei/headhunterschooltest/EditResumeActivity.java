@@ -22,7 +22,7 @@ public class EditResumeActivity extends FragmentActivity {
 
 	public static final String FULL_NAME_KEY = "fullName";
 	public static final String BIRTH_DATE_KEY = "birthDate";
-	public static final String SEX_KEY = "sex";
+	public static final String GENDER_KEY = "gender";
 	public static final String POSITION_NAME_KEY = "positionName";
 	public static final String SALARY_KEY = "salary";
 	public static final String PHONE_KEY = "phone";
@@ -34,7 +34,7 @@ public class EditResumeActivity extends FragmentActivity {
 	private EditText edEmail;
 	private EditText edFullName;
 	private TextView tvBirthDate;
-	private Spinner spSexSelector;
+	private Spinner spGenderSelector;
 	private EditText edPositionName;
 	private EditText edSalary;
 	private EditText edPhone;
@@ -76,9 +76,9 @@ public class EditResumeActivity extends FragmentActivity {
 				android.R.layout.simple_spinner_item, genderList);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-		spSexSelector = (Spinner) findViewById(R.id.spBirthDate);
-		spSexSelector.setAdapter(adapter);
-		spSexSelector.setSelection(0);
+		spGenderSelector = (Spinner) findViewById(R.id.spBirthDate);
+		spGenderSelector.setAdapter(adapter);
+		spGenderSelector.setSelection(0);
 
 		responseIntent = getIntent();
 		if (responseIntent != null && responseIntent.getExtras() != null) {
@@ -88,7 +88,7 @@ public class EditResumeActivity extends FragmentActivity {
 				dialog.setMessage(responseIntent.getExtras()
 						.get(SendResponseToApplicantActivity.RESPONSE_TEXT_KEY)
 						.toString());
-				dialog.show(getSupportFragmentManager(), "Dialog");
+				dialog.show(getSupportFragmentManager(), "RespondToCandidateDialog");
 			}
 		}
 
@@ -116,7 +116,7 @@ public class EditResumeActivity extends FragmentActivity {
 			public void onClick(View v) {
 				DatePickerDialogFragment dialog = new DatePickerDialogFragment();
 				dialog.setValues(datePickerListener, year, month, day);
-				dialog.show(getSupportFragmentManager(), "Dialog");
+				dialog.show(getSupportFragmentManager(), "DateChangeDialog");
 			}
 
 		});
@@ -143,7 +143,7 @@ public class EditResumeActivity extends FragmentActivity {
 				intent.putExtra(FULL_NAME_KEY, edFullName.getText().toString());
 				intent.putExtra(BIRTH_DATE_KEY, tvBirthDate.getText()
 						.toString());
-				intent.putExtra(SEX_KEY, spSexSelector.getSelectedItem()
+				intent.putExtra(GENDER_KEY, spGenderSelector.getSelectedItem()
 						.toString());
 				intent.putExtra(POSITION_NAME_KEY, edPositionName.getText()
 						.toString());
@@ -193,8 +193,8 @@ public class EditResumeActivity extends FragmentActivity {
 		String birthDate = tvDisplayDate.getText().toString();
 		editor.putString(BIRTH_DATE_KEY, birthDate);
 
-		int sex = spSexSelector.getSelectedItemPosition();
-		editor.putInt(SEX_KEY, sex);
+		int sex = spGenderSelector.getSelectedItemPosition();
+		editor.putInt(GENDER_KEY, sex);
 
 		String positionName = edPositionName.getText().toString();
 		editor.putString(POSITION_NAME_KEY, positionName);
@@ -218,7 +218,7 @@ public class EditResumeActivity extends FragmentActivity {
 		SharedPreferences preferences = getPreferences(MODE_PRIVATE);
 		edFullName.setText(preferences.getString(FULL_NAME_KEY, ""));
 		tvDisplayDate.setText(preferences.getString(BIRTH_DATE_KEY, ""));
-		spSexSelector.setSelection(preferences.getInt(SEX_KEY, 0));
+		spGenderSelector.setSelection(preferences.getInt(GENDER_KEY, 0));
 		edPositionName.setText(preferences.getString(POSITION_NAME_KEY, ""));
 		edSalary.setText(preferences.getString(SALARY_KEY, ""));
 		edPhone.setText(preferences.getString(PHONE_KEY, ""));

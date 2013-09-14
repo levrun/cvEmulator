@@ -33,7 +33,7 @@
 	<string name="email_to_candidate_text">. Вас приветствует работодатель XXX. Нас заинтересовала ваша</string>
 	
 	<string name="message_to_candidate_text2_1">Здравствуйте, </string>
-	<string name="message_to_candidate_text2_2">". TODO \n С уважением, компания Head Hunter."</string>
+	<string name="message_to_candidate_text2_2">". ДОБАВЬТЕ ВАШЕ СООБЩЕНИЕ КАНДИДАТУ СЮДА \n С уважением, компания Head Hunter."</string>
 	
 	
 	<string name="error_message_fio">Перед отправкой вашего резюме укажите Фамилию Имя Отчество.</string>	
