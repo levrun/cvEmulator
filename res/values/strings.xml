@@ -38,4 +38,9 @@
 	<string name="error_message_fio">Put your last first and middle name before sending.</string>	
 	
 	
+	<string name="message_text">Text of your message</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="maybe">Maybe</string>
+	
 </resources>
