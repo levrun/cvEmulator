@@ -39,10 +39,8 @@ Activity-1 содержит следующие UI- компоненты:
 Приложение должно быть сделано по гайдлайнам Поддержка Android 2.3.x и выше
 
 <img src="https://dl.dropboxusercontent.com/u/33173295/2013-09-26%2010.27.03.png" width="250" height="350" alt="">
-
-![alt tag](https://dl.dropboxusercontent.com/u/33173295/2013-09-26%2010.27.03.png)
-![alt tag](https://dl.dropboxusercontent.com/u/33173295/2013-09-26%2010.27.07.png)
-![alt tag](https://dl.dropboxusercontent.com/u/33173295/2013-09-26%2010.27.36.png)
+<img src="https://dl.dropboxusercontent.com/u/33173295/2013-09-26%2010.27.07.png" width="250" height="350" alt="">
+<img src="https://dl.dropboxusercontent.com/u/33173295/2013-09-26%2010.27.36.png" width="250" height="350" alt="">
 
 
 
