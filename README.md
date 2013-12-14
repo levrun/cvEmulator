@@ -38,7 +38,7 @@ Activity-1 содержит следующие UI- компоненты:
 Все текстовые поля должны иметь hint (подсказку) или заголовок 
 Приложение должно быть сделано по гайдлайнам Поддержка Android 2.3.x и выше
 
-<img src="https://dl.dropboxusercontent.com/u/33173295/2013-09-26%2010.27.03.png" width="400" height="640" hspace="5" vspace="7" alt="">
+<img src="http://i.imgur.com/bNBqkiq.png?1" width="400" height="640" hspace="5" vspace="7" alt="">
 <img src="https://dl.dropboxusercontent.com/u/33173295/2013-09-26%2010.27.07.png" width="400" height="640" hspace="5" vspace="7" alt="">
 <img src="https://dl.dropboxusercontent.com/u/33173295/2013-09-26%2010.27.36.png" width="400" height="640" hspace="5" vspace="7" alt="">
 
