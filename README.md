@@ -39,8 +39,8 @@ Activity-1 содержит следующие UI- компоненты:
 Приложение должно быть сделано по гайдлайнам Поддержка Android 2.3.x и выше
 
 <img src="http://i.imgur.com/bNBqkiq.png?1" width="400" height="640" hspace="5" vspace="7" alt="">
-<img src="http://imgur.com/uMyDgff" width="400" height="640" hspace="5" vspace="7" alt="">
-<img src="http://imgur.com/m2vDvHN" width="400" height="640" hspace="5" vspace="7" alt="">
+<img src="http://imgur.com/uMyDgff.png?1" width="400" height="640" hspace="5" vspace="7" alt="">
+<img src="http://imgur.com/m2vDvHN.png?1" width="400" height="640" hspace="5" vspace="7" alt="">
 
 
 
